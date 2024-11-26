@@ -28,16 +28,16 @@ void afficherMenu() {
 void ajouterTache() {
     if (nb_taches < MAX_TACHES) {
         printf("Entrez le titre de la tâche: ");
-        scanf("%99s", taches[nb_taches].titre);
+        scanf("%s", taches[nb_taches].titre);
 
         printf("Entrez la description de la tâche: ");
-        scanf("%199s", taches[nb_taches].description);
+        scanf("%s", taches[nb_taches].description);
 
         printf("Entrez la date d'échéance (JJ/MM/AAAA): ");
-        scanf("%19s", taches[nb_taches].date_echeance);
+        scanf("%s", taches[nb_taches].date_echeance);
 
         printf("Entrez la priorité (High/Low): ");
-        scanf("%9s", taches[nb_taches].priorite);
+        scanf("%s", taches[nb_taches].priorite);
 
         nb_taches++;
         printf("Tâche ajoutée avec succès!\n");
